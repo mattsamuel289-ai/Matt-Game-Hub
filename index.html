@@ -193,150 +193,22 @@ footer a{
       <button>Play Now</button>
     </a>
   </div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  <div class="game-card">
-    <img src="https://picsum.photos/200?7" alt="Who Is?">
-    <h3>Who Is?</h3>
-    <a href="https://poki.com/en/g/who-is" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyANNbq6n5jJFghRMGig_qPIsbxasEtZCS8",
+    authDomain: "matt-game-hub.firebaseapp.com",
+    projectId: "matt-game-hub",
+    storageBucket: "matt-game-hub.firebasestorage.app",
+    messagingSenderId: "677544076972",
+    appId: "1:677544076972:web:53fcecf2aef348ed13a109"
+  };
 
-  <div class="game-card">
-    <img src="https://picsum.photos/200?8" alt="Blocky Blast Puzzle">
-    <h3>Blocky Blast Puzzle</h3>
-    <a href="https://poki.com/en/g/blocky-blast-puzzle" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-  <div class="game-card">
-    <img src="https://picsum.photos/200?9" alt="Fruit Ninja">
-    <h3>Fruit Ninja</h3>
-    <a href="https://poki.com/en/g/fruit-ninja" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-  <div class="game-card">
-    <img src="https://picsum.photos/200?10" alt="Ragdoll Hit">
-    <h3>Ragdoll Hit</h3>
-    <a href="https://poki.com/en/g/ragdoll-hit" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-  <div class="game-card">
-    <img src="https://picsum.photos/200?11" alt="Level Devil">
-    <h3>Level Devil</h3>
-    <a href="https://poki.com/en/g/level-devil" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-  <div class="game-card">
-    <img src="https://picsum.photos/200?12" alt="Planet Destruction">
-    <h3>Planet Destruction</h3>
-    <a href="https://poki.com/en/g/planet-destruction" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-  <div class="game-card">
-    <img src="https://picsum.photos/200?13" alt="Neon Challenge Legends">
-    <h3>Neon Challenge Legends</h3>
-    <a href="https://poki.com/en/g/neon-challenge-legends" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-  <div class="game-card">
-    <img src="https://picsum.photos/200?14" alt="My Perfect Hotel">
-    <h3>My Perfect Hotel</h3>
-    <a href="https://poki.com/en/g/my-perfect-hotel" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-  <div class="game-card">
-    <img src="https://picsum.photos/200?15" alt="Harvest Simulator">
-    <h3>Harvest Simulator</h3>
-    <a href="https://poki.com/en/g/harvest-simulator" target="_blank">
-      <button>Play Now</button>
-    </a>
-  </div>
-
-</section>
-</section>
-</section>
-
-  <!-- Ad space -->
-  <div class="ad-box">
-    Advertisement Space
-  </div>
-
-</section>
-
-<!-- About Section -->
-<section id="about">
-  <h2>About This Website</h2>
-  <p>
-    Matt Game Hub is a website where you can discover fun online games.
-    Our goal is to make gaming easy and enjoyable for everyone.
-  </p>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: mattgames@email.com</p>
-</section>
-
-<!-- Privacy Policy -->
-<section id="privacy">
-  <h2>Privacy Policy</h2>
-  <p>
-    At Matt Game Hub, we respect your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our website.
-  </p>
-  <h3>Information We Collect</h3>
-  <p>
-    We may collect non-personal information such as browser type, device information, and pages visited. This helps us improve the experience for our visitors.
-  </p>
-  <h3>Cookies</h3>
-  <p>
-    Our website may use cookies to enhance user experience. Cookies help remember your preferences and improve website performance.
-  </p>
-  <h3>Third-Party Advertising</h3>
-  <p>
-    We may partner with advertising companies such as Google to display ads on our website. These companies may use cookies or similar technologies to provide advertisements based on your interests.
-  </p>
-  <h3>External Links</h3>
-  <p>
-    Our website may contain links to external websites. We are not responsible for the privacy practices or content of those websites.
-  </p>
-  <h3>Consent</h3>
-  <p>
-    By using our website, you consent to our Privacy Policy and agree to its terms.
-  </p>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>© 2026 Matt Game Hub</p>
-  <p id="lastUpdate"></p>
-  <p><a href="#privacy">Privacy Policy</a></p>
-</footer>
-
-<!-- Automatic Last Updated Script -->
-<script>
-const today = new Date();
-const formattedDate = today.toLocaleDateString('en-US', {
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric'
-});
-document.getElementById('lastUpdate').innerText = "Last Updated: " + formattedDate;
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 </script>
-
-</body>
-</html>
